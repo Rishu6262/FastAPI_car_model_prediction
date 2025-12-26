@@ -1,7 +1,7 @@
 import streamlit as st 
 import requests
 
-API = 'http://127.0.0.1:8000/predict'
+API = 'https://fastapi-car-model-prediction.onrender.com/predict'
 
 st.title("🚗 Car Price Prediction")
 name = st.text_input("Car Name", placeholder="e.g. Maruti Swift Dzire")
@@ -43,3 +43,4 @@ if st.button('Predict Now'):
 
         # streamlit for terminal (streamlit run ui.py)
         # api uvicorn for terminal (uvicorn app:app --reload) 
+
