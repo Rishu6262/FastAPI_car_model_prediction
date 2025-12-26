@@ -84,7 +84,7 @@ def predict(data:PricePredict):
 
 
 
-with open('model.pkl','rb') as fs:
+with open('model_compressed.pkl','rb') as fs:
     model = joblib.load(fs)
 
 # import joblib
@@ -95,3 +95,4 @@ with open('model.pkl','rb') as fs:
 @app.get('/')
 def greet():
     return {"This is Project Home page go on docs for prediction"}
+
